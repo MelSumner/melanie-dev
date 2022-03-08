@@ -17,9 +17,9 @@
       </nav>
       {% endif %}
       {% if site.navigationStyle == 'horizontal' %}
-        <main id="main" class="dark:bg-gray-900 pt-16 sm:pt-18 md:pt-48">
+        <main id="main" class="dark:bg-gray-900 pt-16 sm:pt-18 md:pt-48 min-h-screen">
       {% else %}
-        <main id="main" class="dark:bg-gray-900 pt-16 sm:pt-18 md:pt-20 md:pl-64 lg:pl-72">
+        <main id="main" class="dark:bg-gray-900 pt-16 sm:pt-18 md:pt-20 md:pl-64 lg:pl-72 min-h-screen">
       {% endif %}     
         {{ layoutContent | safe }} 
         {% include "components/footer.njk" %} 
